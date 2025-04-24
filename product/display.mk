@@ -1,15 +1,15 @@
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
 # we do this little trick to fall back to the hdpi version
 # if the xhdpi doesn't exist.
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
-PRODUCT_AAPT_PREBUILT_DPI := hdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES += debug.hwui.use_buffer_age=false
 
 # Ambient display
@@ -68,12 +68,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
-    ro.sf.lcd_density=320 \
+    ro.sf.lcd_density=480 \
     sdm.debug.disable_rotator_split=1 \
     vendor.debug.disable_skip_validate=1 \
     sdm.debug.disable_skip_validate=1 \
     sdm.perf_hint_window=50 \
-    sys.display-size=1280x720
+    sys.display-size=1920x1080
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \

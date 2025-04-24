@@ -22,24 +22,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from lv517 device
-$(call inherit-product, device/lge/lv517/device.mk)
+# Inherit from sf340n device
+$(call inherit-product, device/lge/sf340n/device.mk)
 
 BOARD_VENDOR := lge
-PRODUCT_DEVICE := lv517
-PRODUCT_NAME := lineage_lv517
+PRODUCT_DEVICE := sf340n
+PRODUCT_NAME := lineage_sf340n
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := TP260
+PRODUCT_MODEL := M470
 PRODUCT_MANUFACTURER := lge
 
 PRODUCT_GMS_CLIENTID_BASE := android-lge
 
-TARGET_VENDOR_PRODUCT_NAME := lv517
+TARGET_VENDOR_PRODUCT_NAME := sf340n
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="lv517" \
-    PRODUCT_NAME="lv517" \
-    PRIVATE_BUILD_DESC="lv517_tmo_us-user 7.1.2 NRD90U 171071514d722 release-keys"
+    TARGET_DEVICE="sf340n" \
+    PRODUCT_NAME="sf340n" \
+    PRIVATE_BUILD_DESC="sf340n_tmo_us-user 7.0 NRD90U 1723312232a11 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "T-Mobile/lv517_tmo_us/lv517:7.1.2/NRD90U/171071514d722:user/release-keys"
+BUILD_FINGERPRINT := "lge/sf340n_tmo_us/sf340n:7.0/NRD90U/1723312232a11:user/release-keys"

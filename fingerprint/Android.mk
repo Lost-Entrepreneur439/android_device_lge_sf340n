@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,12 +14,22 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/sf340n
+LOCAL_PATH := $(call my-dir)
 
-TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
+include $(CLEAR_VARS)
 
-# Inherit device-specific board fragments
-include $(DEVICE_PATH)/board/*.mk
+LOCAL_SRC_FILES := \
+    FingerprintWrapper.cpp
 
-# Inherit the proprietary files
--include vendor/lge/sf340n/BoardConfigVendor.mk
+LOCAL_SHARED_LIBRARIES := \
+    libhardware liblog
+
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_MODULE := fingerprint.msm8937
+LOCAL_MODULE_TAGS := optional
+LOCAL_32_BIT_ONLY := true
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.lv517"
+#define LOG_TAG "android.hardware.light@2.0-service.sf340n"
 
 #include <hidl/HidlTransportSupport.h>
 

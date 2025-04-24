@@ -18,10 +18,10 @@
 
 set -e
 
-DEVICE=lv517
+DEVICE=sf340n
 VENDOR=lge
 
-INITIAL_COPYRIGHT_YEAR=2018
+INITIAL_COPYRIGHT_YEAR=2025
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -40,7 +40,7 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
-write_headers "lv517"
+write_headers "sf340n"
 
 # The standard device blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true

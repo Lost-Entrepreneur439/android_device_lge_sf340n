@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/lv517
+DEVICE_PATH := device/lge/sf340n
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -22,7 +22,16 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 # Include device-specific product fragments
-include device/lge/lv517/product/*.mk
+include device/lge/sf340n/product/*.mk
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/lge/lv517/lv517-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/sf340n/sf340n-vendor.mk)
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.0-service_32 \
+    fingerprint.msm8937
+
+# Fingerprint Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml

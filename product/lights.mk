@@ -1,3 +1,3 @@
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.lv517
+    android.hardware.light@2.0-service.sf340n
