@@ -1,19 +1,18 @@
-# Device Tree for LG K20 Plus
+# Device Tree for LG Stylo 3 Plus
 
 ## Spec Sheet
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Quad-core 1.4 GHz Cortex-A53
-Chipset | Qualcomm MSM8917 Snapdragon 425 (28 nm)
-GPU     | Adreno 308
-Memory  | 2 GB RAM
+CPU     | Octa-core 1.4 GHz Cortex-A53
+Chipset | Qualcomm MSM8940 Snapdragon 435 (28 nm)
+GPU     | Adreno 505
+Storage/Memory  | 32GB 2GB RAM
 Shipped Android Version | Android 7.0 (Nougat)
-Storage | 16 GB(VS501) /32 GB
-MicroSD | Up to 256 GB
-Battery | Removable Li-Ion 2700 mAh battery
-Display | 720 x 1280 pixels, 5.3 inches (~277 ppi pixel density)
-Camera  | 13 MP, f/2.2, 1/3", 1.12µm, AF
+MicroSD | microSDXC (dedicated slot)
+Battery | Li-Ion 3080 mAh, removable
+Display | 1080 x 1920 pixels, 16:9 ratio (~386 ppi density)
+Camera  | 13 MP, 1/3.1", 1.12µm, AF
 
 ## Device Picture
-![LG K20 Plus](https://images-na.ssl-images-amazon.com/images/I/81mLeBeLmLL._SX679_.jpg "LG K20 Plus")
+![LG Stylo 3 Plus](https://m.media-amazon.com/images/I/416VYRVad3L._AC_.jpg)
